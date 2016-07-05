@@ -1,0 +1,420 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);								
+									
+/******************************************************************
+	This is the CSS Reset
+******************************************************************/
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	letter-spacing: 0.025em;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+/******************************************************************
+	Text Selection Styles
+******************************************************************/
+::selection {
+	background: #6093e7;
+	color: #fff;
+}
+::-moz-selection {
+	background: #6093e7;
+	color: #fff;
+}
+::-webkit-selection {
+	background: #6093e7;
+	color: #fff;
+}
+a {
+	outline: none;
+}
+
+/*general*/						
+a {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	text-decoration: none;
+	font-size: 8pt;
+	color: #616161;
+}
+a:hover {
+	color: #6093e7;
+}
+b {
+	font-weight: bold;
+}
+p {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #848484;
+	font-size: 12px;
+}
+
+h1 {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #454544;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+
+.hidden {
+	display: none;
+}
+.block {
+	display: block;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+
+
+
+
+/*Main*/
+.content {
+	max-width: 960px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content.sidebar {
+	width: 659px;
+	float: left;
+	margin-top: 40px;
+	border-right: 1px solid #e7e7e7;
+}
+.sidebar {
+	width: 300px;
+	float: right;
+}
+blockquote {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 28px;
+	line-height: 60px;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	padding-top: 40px;
+	color: #616161;
+	font-weight: 300;
+	font-style: italic;
+}
+blockquote:before {
+	content: '"';
+	font-weight: bold;
+	font-size: 36px;
+}
+blockquote:after {
+	content: '"';
+	font-weight: bold;
+	font-size: 36px;
+}
+div.pagetitle {
+	width: 100%;
+	background-color: #6093e7;
+	height: 120px;
+}
+div.pagetitle h1 {
+	line-height: 120px;
+	color: #FFF;
+	text-align: center;
+}
+p.main {
+	font-size: 15px;
+	text-align: center;
+	margin: 50px auto;
+	font-weight: 400;
+}
+div.section.divider {
+	width: 100%;
+	height: 40px;
+	border-top: 1px solid #6093e7;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+div.section.divider.single {
+	border-top: 1px solid #6093e7;
+	margin-top: 150px;
+}
+div.section.divider h2 {
+	font-weight: 400;
+	color: #6093e7;
+	background-color: #FFF;
+	margin-top: -20px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+a.scroll {
+	width: 100%;
+	display: block;
+}
+div.icon {
+	font-size: 80px;
+	color: #FFF;
+}
+.front div.icon {
+	line-height: 210px;
+	text-align: center;
+}
+
+/*Hero Images*/
+.hero {
+	width: 100%;
+	height: 100%;
+}
+.home.hero {
+	background-image: url(../img/Toronto_Ontario.jpg);
+	background-size: cover;
+}
+.overlay {
+	background-image: url(../img/overlay_light_diagonal.png);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-repeat: repeat;
+}
+
+
+a.scrolldown {
+	display: block;
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	cursor: pointer;
+}
+.scrolldown .icon {
+	font-size: 20px;
+	text-align: center;
+}
+.scrolldown h3 {
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 300;
+}
+
+
+
+
+/******************************************************************
+	Menu
+******************************************************************/
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+ 
+#nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+#nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  display: inline-block;
+}
+ 
+#nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+#nav a:hover {
+  background-color: #005f5f;
+}
+ 
+#nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+header > .navButton {
+/* this will hide the open nav button when the screen is full size */
+display: none;
+}
+ 
+
+	
+
+/******************************************************************
+	Footer
+******************************************************************/
+footer.main {
+	height: 195px;
+	width: 100%;
+	margin-top: 60px;
+	text-align: center;
+}
+footer.main div.twitter {
+	width: 100%;
+	padding-bottom: 30px;
+	background-color: #343434;
+}
+footer.main h5.twitter {
+	color: #FFF;
+	line-height: 90px;
+	background-color: #343434;
+}
+footer.main h6.copyright {
+	color: #FFF;
+	line-height: 50px;
+	background-color: #272727;
+}
+
+
+/******************************************************************
+	Contact
+******************************************************************/
+.contact {
+	text-align: center;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #848484;
+	font-size: 16px;
+}
+input {
+	line-height: 50px;
+	font-size: 18px;
+	width: 500px;
+	height: 50px;
+	border: 1px solid #6093e7;
+	outline: none;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+textarea {
+	line-height: 50px;
+	height: 200px;
+	font-size: 18px;
+	width: 500px;
+	border: 1px solid #6093e7;
+	outline: none;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/****font on image*****/
+.mid h2 {
+  font-family: Frutiger [1977 - Adrian Frutiger] ;
+  font-weight: 10px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 80px;
+  transform: translate(-50%, -50%);
+}
+
+/******************************************************************
+	Footer
+******************************************************************/
+.footer {
+	width: 100%;
+	margin-top: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background-color: #6093e7;
+}
+.footer h6 {
+	line-height: 50px;
+	color: #FFF;
+}
+
+/******************************************************************
+	Mobile
+******************************************************************/
+@media all and (max-width: 960px) {
+	ul.portfolio li {
+		width: 50%;
+	}
+}
+
+/* RESPONSIVE NAV */
+@media screen and (max-width: 600px) {
+	header > .navButton {
+		display: inline-block;
+		width: 100%;
+		
+	}
+	
+	header {
+		display: inline;
+		background-color: blue;
+	}
+
+	#nav {
+		display: none;
+	}
+
+  #nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+	display: inline-block;
+  }
+
+	header:hover > #nav {
+	/* this will show the dropdown nav button when the screen is small */
+		display: inline-block;
+	}
+
+
